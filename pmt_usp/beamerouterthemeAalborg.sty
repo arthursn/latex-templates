@@ -156,7 +156,7 @@
   \defbeamertemplate*{section in sidebar}{Aalborg theme}{%
     \vbox{%
       \vskip1ex% add some extra space when inserting a new section
-      \sidebarnavitem{4pt}{section in sidebar}{%
+      \sidebarnavitem{5pt}{section in sidebar}{%
         \sidebarcurframe{\insertframenumber}%
         \insertsectionhead
       }
@@ -167,13 +167,13 @@
   \defbeamertemplate*{section in sidebar shaded}{Aalborg theme}{%
     \vbox{%
       \vskip1ex% add some extra space when inserting a new section
-      \sidebarnavitem{4pt}{section in sidebar shaded}{\insertsectionhead}
+      \sidebarnavitem{5pt}{section in sidebar shaded}{\insertsectionhead}
     }
   }
 
   % current subsection in the sidebar
   \defbeamertemplate*{subsection in sidebar}{Aalborg theme}{%
-    \sidebarnavitem{6pt}{subsection in sidebar}{
+    \sidebarnavitem{7pt}{subsection in sidebar}{
       \sidebarcurframe{\insertframenumber}%
       \insertsubsectionhead
     }
@@ -181,12 +181,12 @@
 
   % all subsection in the sidebar but the current
   \defbeamertemplate*{subsection in sidebar shaded}{Aalborg theme}{%
-    \sidebarnavitem{6pt}{subsection in sidebar shaded}{\insertsubsectionhead}
+    \sidebarnavitem{7pt}{subsection in sidebar shaded}{\insertsubsectionhead}
   }
 
   % current subsubsection in the sidebar
   \defbeamertemplate*{subsubsection in sidebar}{Aalborg theme}{%
-    \sidebarnavitem{8pt}{subsubsection in sidebar}{
+    \sidebarnavitem{9pt}{subsubsection in sidebar}{
       \sidebarcurframe{\insertframenumber}%
       \insertsubsubsectionhead
     }  
@@ -194,7 +194,7 @@
 
   % all subsubsection in the sidebar but the current
   \defbeamertemplate*{subsubsection in sidebar shaded}{Aalborg theme}{%
-    \sidebarnavitem{8pt}{subsubsection in sidebar shaded}{\insertsubsubsectionhead} 
+    \sidebarnavitem{9pt}{subsubsection in sidebar shaded}{\insertsubsubsectionhead} 
   }
   
   %remove the navigation symbols from the title page if the option is not set
@@ -238,7 +238,7 @@
       \usebeamercolor{palette sidebar primary}%
       \usebeamercolor{Aalborg}%
       \usebeamerfont{subsection in sidebar}%
-      \node[fill=palette sidebar primary.bg,draw=Aalborg.fg,circle,very thick,minimum width=4mm] at ([yshift=2mm] BE) {{\usebeamercolor[fg]{subsection in sidebar}\inserttotalframenumber}};
+      \node[fill=palette sidebar primary.bg,draw=Aalborg.fg,circle,very thick,minimum width=3.5mm] at ([yshift=2mm] BE) {{\usebeamercolor[fg]{subsection in sidebar}\inserttotalframenumber}};
     }
     %insert the logo
     \node at (logopos) {\insertlogo};
@@ -266,7 +266,7 @@
     \usebeamercolor{palette sidebar primary}%
     \usebeamercolor{Aalborg}%
     \draw[color=bg,line width=\beamer@barwidth] (BS) -- (CF);
-    \node[fill=palette sidebar primary.bg,draw=Aalborg.bg,circle,minimum width=3.5mm,thick] at (CF) {{\fontsize{4}{5}\selectfont{\usebeamercolor[fg]{subsection in sidebar}#1}}};
+    \node[fill=palette sidebar primary.bg,draw=Aalborg.bg,circle,minimum width=3mm,thick] at (CF) {{\fontsize{4}{5}\selectfont{\usebeamercolor[fg]{subsection in sidebar}#1}}};
   }
   \end{tikzpicture}%
   \tikzexternalenable
